@@ -14,12 +14,8 @@ input.textContent=0
 buttons[0].textContent="increase"
 buttons[1].textContent="decrease"
 buttons[0].addEventListener("click",()=>{
-    num=0
-    let inc=++num
-    if(inc<0){
-        input.textContent=0
-    }else{
-op(inc)}
+    console.log(num)
+op(++num)
 })
 buttons[1].addEventListener("click",()=>{
     let dec=--num;
@@ -28,12 +24,11 @@ buttons[1].addEventListener("click",()=>{
     }
     else{
         alert("zero tak pahuch gya hai ")
-
+        num=0
     }
 })
 function op(item){
-   
     input.textContent=item
-    document.title="counter "+item
+    document.title="counter +"+item
 }
 
